@@ -12,6 +12,11 @@
 		95368B3B1E4B892A0000A6F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95368B391E4B892A0000A6F9 /* Main.storyboard */; };
 		95368B3D1E4B892A0000A6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95368B3C1E4B892A0000A6F9 /* Assets.xcassets */; };
 		95368B401E4B892A0000A6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95368B3E1E4B892A0000A6F9 /* LaunchScreen.storyboard */; };
+		95A8E9B11E4BA5BA0058E671 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A8E9B01E4BA5BA0058E671 /* OutputViewController.swift */; };
+		95A8E9B31E4BA5DB0058E671 /* PiFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A8E9B21E4BA5DB0058E671 /* PiFinder.swift */; };
+		95A8E9B71E4BA6560058E671 /* pi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95A8E9B61E4BA6560058E671 /* pi.txt */; };
+		95A8E9B91E4BA8CD0058E671 /* Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A8E9B81E4BA8CD0058E671 /* Origin.swift */; };
+		95D0447D1E4BA39F009EC700 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0447C1E4BA39F009EC700 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		95368B3C1E4B892A0000A6F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95368B3F1E4B892A0000A6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95368B411E4B892A0000A6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A8E9B01E4BA5BA0058E671 /* OutputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		95A8E9B21E4BA5DB0058E671 /* PiFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PiFinder.swift; path = util/PiFinder.swift; sourceTree = "<group>"; };
+		95A8E9B61E4BA6560058E671 /* pi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pi.txt; path = resources/pi.txt; sourceTree = "<group>"; };
+		95A8E9B81E4BA8CD0058E671 /* Origin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Origin.swift; path = util/Origin.swift; sourceTree = "<group>"; };
+		95D0447C1E4BA39F009EC700 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,33 @@
 			children = (
 				95368B351E4B892A0000A6F9 /* AppDelegate.swift */,
 				95368B371E4B892A0000A6F9 /* ViewController.swift */,
+				95D0447C1E4BA39F009EC700 /* InputViewController.swift */,
+				95A8E9B01E4BA5BA0058E671 /* OutputViewController.swift */,
+				95A8E9B41E4BA5E00058E671 /* util */,
+				95A8E9B51E4BA64A0058E671 /* resources */,
 				95368B391E4B892A0000A6F9 /* Main.storyboard */,
 				95368B3C1E4B892A0000A6F9 /* Assets.xcassets */,
 				95368B3E1E4B892A0000A6F9 /* LaunchScreen.storyboard */,
 				95368B411E4B892A0000A6F9 /* Info.plist */,
 			);
 			path = PiPuzzleFinder;
+			sourceTree = "<group>";
+		};
+		95A8E9B41E4BA5E00058E671 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				95A8E9B21E4BA5DB0058E671 /* PiFinder.swift */,
+				95A8E9B81E4BA8CD0058E671 /* Origin.swift */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		95A8E9B51E4BA64A0058E671 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				95A8E9B61E4BA6560058E671 /* pi.txt */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95368B401E4B892A0000A6F9 /* LaunchScreen.storyboard in Resources */,
+				95A8E9B71E4BA6560058E671 /* pi.txt in Resources */,
 				95368B3D1E4B892A0000A6F9 /* Assets.xcassets in Resources */,
 				95368B3B1E4B892A0000A6F9 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A8E9B31E4BA5DB0058E671 /* PiFinder.swift in Sources */,
+				95D0447D1E4BA39F009EC700 /* InputViewController.swift in Sources */,
+				95A8E9B11E4BA5BA0058E671 /* OutputViewController.swift in Sources */,
 				95368B381E4B892A0000A6F9 /* ViewController.swift in Sources */,
 				95368B361E4B892A0000A6F9 /* AppDelegate.swift in Sources */,
+				95A8E9B91E4BA8CD0058E671 /* Origin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +333,7 @@
 				95368B461E4B892A0000A6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
