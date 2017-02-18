@@ -22,6 +22,7 @@ class OutputViewController : UIViewController {
     }
     
     override func viewDidLoad() {
+        self.title = "Ergebnis"
         imgView.origins = result
     }
 }

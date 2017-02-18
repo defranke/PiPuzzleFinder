@@ -14,6 +14,7 @@ class InputViewController : UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     
     override func viewDidLoad() {
+        self.title = "Eingabe"
         searchButton.isEnabled = false
     }
     
