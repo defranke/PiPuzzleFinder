@@ -6,14 +6,15 @@
 //  Copyright © 2017 Dennis Franke. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Origin {
-    var line: Int!
-    var charPos: Int!
+    var lineInImage: Double!
+    var charInImage: Double!
+    var resultWidth: Double!
+    var resultHeight: Double!
     
-    init(line: Int, charPos: Int) {
-        self.line = line
-        self.charPos = charPos
+    init() {
+        
     }
 }
